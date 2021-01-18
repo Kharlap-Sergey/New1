@@ -1,0 +1,75 @@
+@import "shared/variables.scss";
+
+.ad-form {
+  background-color: transparent;
+  &__body {
+    box-sizing: border-box;
+    width: 400px;
+    height: 540px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    font-size: 1.4rem;
+    border-radius: inherit;
+  }
+
+  &__title-validation {
+    padding-bottom: 1px;
+    color: white;
+    background-color: transparent;
+  }
+  &__title-input {
+    width: 100%;
+    height: 40px;
+    padding: 4px 20px 0;
+    color: $input-valid-color;
+    font-size: 18px;
+    background-color: $input-valid-bg-color !important;
+    border: 0;
+    border-radius: inherit;
+    outline: 0;
+    &:invalid {
+      color: white;
+      background-color: $input-invalid-bg-color !important;
+    }
+  }
+
+  &__type {
+    position: relative;
+    margin: 5px 0px;
+  }
+  .form-control {
+    width: 100%;
+    height: 100%;
+    background-color: $input-valid-bg-color !important;
+    border: 0px;
+    outline: none;
+  }
+  &__description {
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: inherit;
+    textarea {
+      width: 100%;
+      height: 300px;
+      padding: 10px;
+      overflow-y: scroll;
+      background-color: $input-valid-bg-color !important;
+      border-radius: inherit;
+      &:invalid {
+        color: white;
+        background-color: $input-invalid-bg-color !important;
+      }
+      &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    }
+  }
+}

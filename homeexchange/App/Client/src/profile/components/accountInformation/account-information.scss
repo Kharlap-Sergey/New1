@@ -1,0 +1,39 @@
+@import "shared/variables.scss";
+
+.account-info {
+  padding: 10px;
+  background-image: linear-gradient(#90dab9, #22b573);
+  border-radius: inherit;
+  box-shadow: inset 0 0 5px;
+  &__avatar {
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+
+    img {
+      object-fit: cover;
+    }
+  }
+  &__information {
+    margin-top: 5px;
+  }
+  &__editor {
+    color: $dark-blue;
+  }
+  &__nickname {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+  &__email {
+    max-width: 300px;
+    margin-top: 4px;
+    font-size: 1.2rem;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  &__from {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+}

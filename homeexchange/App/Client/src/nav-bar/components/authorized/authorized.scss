@@ -1,0 +1,19 @@
+.authorized-container {
+  position: relative;
+}
+
+.logout-part-of-nav {
+  width: 75%;
+  font-size: 1rem;
+}
+.avatar--mini {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-actions {
+  &__item {
+    width: fit-content;
+    padding-bottom: 10px;
+  }
+}

@@ -1,6 +1,8 @@
 ﻿*.map
 dist
 test
+*cache*
+*logger.txt
 # Created by https://www.toptal.com/developers/gitignore/api/vscode,vs,webstorm,git,web
 # Edit at https://www.toptal.com/developers/gitignore?templates=vscode,vs,webstorm,git,web
 
@@ -504,3 +506,5 @@ fabric.properties
 .idea/codestream.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,vs,webstorm,git,web
+homeexchange/.eslintcache
+homeexchange/.eslintcache

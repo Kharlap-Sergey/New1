@@ -1,0 +1,119 @@
+@import "shared/variables.scss";
+.ad {
+  width: fit-content;
+  min-width: 450px;
+  max-width: 98%;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  overflow: hidden;
+  font-size: 1rem;
+  background: linear-gradient(to right, $purple-blue-light, $green);
+  border: 0;
+  border-radius: 10px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+  &__main-info {
+    display: flex;
+    justify-content: space-between;
+    min-height: 65px;
+  }
+  &__author {
+    width: 60px;
+    height: 60px;
+  }
+  &__date {
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+  }
+  &__type {
+    color: $dark-blue;
+    font-weight: 600;
+  }
+  &__title {
+    margin-bottom: 0;
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  &__discription {
+    margin-top: 5px;
+    color: black;
+    font-size: 1.4rem;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  &__less {
+    display: flex;
+    justify-content: flex-end;
+    &-btn {
+      position: relative;
+      box-sizing: border-box;
+      margin-top: 20px;
+      padding: 2px 8px 6px 8px;
+      color: $more-btn-color;
+      font-weight: 600;
+      font-size: 2rem;
+      text-align: center;
+      background-color: $dark-blue;
+      border: 0;
+      border-radius: 12px;
+      outline: none !important;
+      cursor: pointer;
+      transition: all 0.5s 0s ease-in-out;
+      &:active {
+        background-color: $dark-green;
+      }
+      &:hover {
+        z-index: 2;
+        color: $dark-blue;
+        font-size: 1.5rem;
+        background-color: $green;
+        box-shadow: 0 0 100px 650px $green;
+      }
+    }
+  }
+  &__action {
+    position: absolute;
+    bottom: 10px;
+  }
+  &__action-btn {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 2px 8px 6px 8px;
+    color: $more-btn-color;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    background-color: $dark-blue;
+    border: 0;
+    border-radius: 12px;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.5s 0s ease-in-out;
+    &:active {
+      background-color: $dark-green;
+    }
+    &:hover {
+      z-index: 2;
+      color: $dark-blue;
+      font-size: 1.5rem;
+      background-color: $green;
+      box-shadow: 0 0 500px 650px $green;
+    }
+  }
+}

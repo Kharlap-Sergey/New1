@@ -1,0 +1,51 @@
+@import "shared/variables.scss";
+@import "shared/mixins.scss";
+
+.ad-responded {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 40px;
+  &__aside {
+    margin-right: inherit;
+    margin-right: 20px;
+  }
+  &__main {
+    width: 700px;
+    height: 500px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    @include prity-bg;
+  }
+}
+
+.ad-responded-main {
+  font-size: 1.4rem;
+  border-radius: 30px;
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+    color: $ad-neon;
+    border-bottom: 1px solid #6a655d;
+  }
+  &__type {
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  &__date {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #6a655d;
+  }
+  &__description {
+    margin: 10px;
+    padding: 2px;
+    word-wrap: break-word;
+  }
+}

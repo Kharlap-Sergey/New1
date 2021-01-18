@@ -1,0 +1,81 @@
+@import "shared/variables.scss";
+
+$radiant-color: #dcdcdc !default;
+.short-ad {
+  width: 450px;
+  min-width: 450px;
+  max-width: 450px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  overflow: hidden;
+  font-size: 1rem;
+  background: linear-gradient(to right, $purple-blue-light, $green);
+  border: 0;
+  border-radius: 10px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+  &__date {
+    margin-top: 0;
+    padding-top: 0;
+    color: white;
+  }
+  &__type {
+    color: $dark-blue;
+    font-weight: 600;
+  }
+  &__title {
+    min-height: 80px;
+    margin-bottom: 0;
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  &__discription {
+    margin-top: 5px;
+    color: black;
+    font-size: 1.4rem;
+  }
+  &__more {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    &-btn {
+      box-sizing: border-box;
+      margin-top: 20px;
+      padding: 2px 8px 6px 8px;
+      color: $more-btn-color;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      background-color: $dark-blue;
+      border: 0;
+      border-radius: 12px;
+      outline: none !important;
+      cursor: pointer;
+      transition: all 0.5s 0s ease-in-out;
+      &:active {
+        background-color: $dark-green;
+      }
+      &:hover {
+        color: $dark-blue;
+        font-size: 2rem;
+        background-color: $green;
+        box-shadow: 0 0 200px 250px $green;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../shared/variables.scss";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  align-content: center;
+  justify-content: center;
+}
+
+.my-btn {
+  color: white;
+  background-color: $btn-bg;
+  border-radius: 10px;
+}

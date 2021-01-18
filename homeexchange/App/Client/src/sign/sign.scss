@@ -1,0 +1,67 @@
+@import "../shared/variables.scss";
+
+.sign {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    position: relative;
+    height: 630px;
+  }
+}
+
+.sign-content {
+  &__form {
+    width: 320px;
+    margin-right: 650px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: $sign-form-bg-color;
+    border-radius: 20px;
+    box-shadow: 4px 4px 70px 10px $sign-form-shadow-color;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &__switcher {
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.sign-switcher {
+  font-size: 1rem;
+  &__btn {
+    margin-left: 10px;
+    padding: 2px 8px 5px;
+    color: white;
+    font-size: 1.4rem;
+    border: 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none !important;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-in-out;
+    -moz-transition: background-color 2s ease-in-out;
+    -ms-transition: background-color 2s ease-in-out;
+    -o-transition: background-color 2s ease-in-out;
+    transition: background-color 2s ease-in-out;
+    &:hover {
+      border: 1px solid#22b573;
+    }
+    &--active {
+      background-color: #22b573;
+    }
+  }
+}

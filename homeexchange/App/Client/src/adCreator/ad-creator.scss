@@ -1,0 +1,37 @@
+@import "shared/variables.scss";
+
+.ad-creator {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  &__body {
+    position: relative;
+    left: -250px;
+    box-sizing: border-box;
+    width: fit-content;
+    min-width: 300px;
+    height: 540px;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  &__form {
+    background-color: $ad-form-bg-color;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 70px 10px $sign-form-shadow-color;
+    transition: 1.5s;
+  }
+
+  &__img-bg-wrapper {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+  }
+  &__img-bg {
+    position: relative;
+    right: -75%;
+  }
+}

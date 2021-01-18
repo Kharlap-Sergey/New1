@@ -1,0 +1,40 @@
+@import "shared/variables.scss";
+
+.input-box {
+  &__validation {
+    margin-bottom: 5px;
+    padding: 0 20px;
+    color: white;
+    border-radius: 12px;
+    transition: all 2s;
+  }
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 40px;
+    padding: 4px 20px 0;
+    color: $input-valid-color;
+    font-size: 18px;
+    background-color: $input-valid-bg-color !important;
+    border: 0;
+    border-radius: 12px;
+    outline: 0;
+    &:invalid {
+      color: white;
+      background-color: $input-invalid-bg-color !important;
+    }
+  }
+}
+
+.password-control {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+  background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}

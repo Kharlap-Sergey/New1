@@ -1,0 +1,35 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  &__item {
+    list-style: none;
+  }
+}
+
+.star {
+  &-item {
+    width: fit-content;
+    height: fit-content;
+    font-size: 2rem;
+    background-clip: text !important;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-text-fill-color: transparent;
+    &--half {
+      background: linear-gradient(to right, gold 50% 50%, gray 50%);
+    }
+    &--full {
+      background: linear-gradient(to right, gold, gold);
+    }
+    &--empty {
+      background: linear-gradient(to right, gray, gray);
+    }
+    &--hover {
+      background: linear-gradient(45deg, blue, #1d2445);
+    }
+    &:hover {
+      font-size: 3rem;
+    }
+  }
+}

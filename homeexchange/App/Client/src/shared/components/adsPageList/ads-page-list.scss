@@ -1,0 +1,23 @@
+@import "shared/mixins.scss";
+.ads-list {
+  width: inherit;
+  height: fit-content;
+  &__element {
+    margin-top: 10px;
+  }
+  &__search {
+    position: relative;
+    top: -10px;
+    width: 350px;
+    height: 80px;
+  }
+  &__filter {
+    width: fit-content;
+    @include prity-bg;
+  }
+  &__options-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
